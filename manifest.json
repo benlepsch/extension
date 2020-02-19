@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "beanstension",
     "version": "0.1",
+
     "content_scripts": [
         {
             "matches": [
@@ -9,5 +10,14 @@
             ],
             "js": ["jquery-3.2.1.min.js","content.js"]
         }
-    ]
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "browser_action": {
+        "default_icon": "asher.png",
+        "default_popup": "popup.html"
+    }
 }
